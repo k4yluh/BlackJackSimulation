@@ -1,0 +1,75 @@
+/* CSS files add styling rules to your content */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+canvas {
+  display: block; 
+  border: thin solid;
+  border-style:double;
+}
+.buttons {
+	background-color: #C6FFA9;
+  border-radius: 16px;
+  border: none;
+	display:inline-block;
+  font-family: 'Alfa Slab One', cursive;
+	cursor:pointer;
+	color: #6ED7FF;
+  cursor: pointer;
+	font-size:15px;
+	padding:10px 24px;
+	text-decoration:none;
+  margin: 5px;
+  transition: all 0.5s;
+}
+
+.buttons:hover {background-color: #FFBAE9}
+
+.buttons span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttons span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttons:hover span {
+  padding-right: 25px;
+}
+
+.buttons:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.sliders {
+  height: 20px;
+  width: 100px;
+  background: #93FFB5;
+  outline: none;
+  opacity: 0.7;
+  -webkit-appearance: none;  
+}
+.sliders::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #6ED7FF;
+  cursor: pointer;
+}
+
